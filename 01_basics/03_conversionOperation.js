@@ -17,11 +17,35 @@
 // jab Undefined ko convert krte hai to NaN milta hai
 //null ko convert krte hai to 0 milta hai
 
-let isLoggedIn = 1;
-let isLoggedInBoolean = Boolean(isLoggedIn); 
+// let isLoggedIn = 1;
+// let isLoggedInBoolean = Boolean(isLoggedIn); 
 
-console.log(isLoggedInBoolean);
+// console.log(isLoggedInBoolean);
 
 // 1 => true | 0=> false
 // "" => false
 // "Vivek" => true
+
+
+// let gameScore = 5;
+// if (gameScore > 5) {
+//     console.log("You are now at level 2");
+// }else if (gameScore < 5 &&  gameScore > 0); {
+//     console.log("You are now at Level 1");
+// }
+
+
+// ye postfix hai
+// pehle value assign hoti hai phir increment hota hai
+// let x = 2;
+// let y = x++;
+
+// console.log(x, y);
+
+// ye prefix hai
+// pehle increment hota hai phir value assign hoti hai
+let x = 2;
+let y = ++x;
+
+console.log(x, y);
+
