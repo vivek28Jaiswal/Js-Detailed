@@ -44,8 +44,11 @@
 
 // ye prefix hai
 // pehle increment hota hai phir value assign hoti hai
-let x = 2;
-let y = ++x;
+// let x = 2;
+// let y = ++x;
 
-console.log(x, y);
+// console.log(x, y);
+
+console.log(2 > "02"); //true
+
 
