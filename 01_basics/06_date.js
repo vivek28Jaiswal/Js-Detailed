@@ -24,19 +24,26 @@ let createdDate = new Date('2001-12-28');          // YYYY-MM-DD format me date 
 // Date.now() // ye method time dikhata hai in ms me and ye time 1 jan 1970 se abhi tak ki value dega in ms me like 1334534555 somthing jo ki har bar har sec change hoga
 
 
-let newDate = new Date()
+// let newDate = new Date()
 // console.log(newDate); //basically current date dikhayega!
 // console.log(newDate.getDay() + 1); // get day basically day batata hai and +1 add is liye kiya jis se code index wala scene shot ho jaye! wo 0 se wala
 // console.log(newDate.getHours());
 // console.log(newDate.getFullYear());
 // console.log(newDate.getUTCMonth() + 1);
 
-let whatMonth = new Date();
-console.log(`this is ${whatMonth.getUTCMonth() + 1} month`);
+// let whatMonth = new Date();
+// console.log(`this is ${whatMonth.getUTCMonth() + 1} month`);
 
+let newDate = new Date()
+let weekday = newDate.toLocaleString('default', {
+    weekday : "short",
+});
 
+console.log(weekday);
 
-
-
+// hum toLocaleString ke ander object define krte hai and uske ander parameters 
+// new.Date.toLocaleString('default',{
+//     // objects
+// });
 
 
