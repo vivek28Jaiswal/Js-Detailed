@@ -23,7 +23,7 @@ const another = [12, 13, 14, [44, ["Govind", 20]]];
 // console.log(another.flat(Infinity)); //flat() method basically concatented (link/join) krta hai more than two arrays ko and isme hum dept choose kr skte hai kitne array tak chahiye hume concat array
 
 console.log(Array.isArray("Gon")); //questioning its this array or not
-console.log(Array.from("Mahira")); // converted a string or number into an array
+console.log(Array.from("Mahira")); // converted string or number into an array
 console.log(Array.from({name: "Sam"})); // interesting ye confused ho jayega me pehele key ka array banau ya value ka! is liye ye ek empty array writen krega
 
 let candidateOne = "Gaurav";
