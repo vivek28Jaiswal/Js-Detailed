@@ -83,4 +83,24 @@ const course = {
 }
 
 const {coursefee} = course;
-console.log(coursefee);
+const {coursefee : fee} = course; //sort kar skte name ko destructure.
+console.log(`Bca course fee is ${fee}`); 
+
+// API | JSON format
+
+{
+    //this is api looks like 
+}
+
+{
+    "name" : "Random", //api just like objects bas uska koi variable name nhi hota and keys as a string trat hoti 
+    "course" : "Bsc",
+    "gender" : "male",
+}
+
+// this is also a api its format is array of object
+[
+    {},
+    {},
+    {},
+]
