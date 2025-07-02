@@ -72,4 +72,15 @@ const students = [
 // console.log(Object.keys(Hogwarts)); //only obj ke keys ko access krne ke liye jo return krega jo array ke form me
 // console.log(Object.values(Hogwarts)); //only value ko access krne ke liye jo return krega jo array ke form me
 // console.log(Object.entries(Hogwarts)); //har key and value ko array bana diya jata hai
-console.log(Hogwarts.hasOwnProperty("ownerFriend", "mothername")); // check kr skte hai property exist krti bhi hai ya nhi koi obj me
+// console.log(Hogwarts.hasOwnProperty("ownerFriend", "mothername")); // check kr skte hai property exist krti bhi hai ya nhi koi obj me
+
+const course = {
+    coursename : "Bachelor of Computer Application",
+    coursefee: "1,20,000 INR",
+    courseduration: "3 years",
+    isStudyMaterialAdded: false,
+    courseInstructor: "Vivek Kumar"
+}
+
+const {coursefee} = course;
+console.log(coursefee);
