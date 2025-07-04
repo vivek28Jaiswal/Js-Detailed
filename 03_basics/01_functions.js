@@ -61,4 +61,4 @@ function reutnArrayIndex (getArray){
 }
 
 // console.log(reutnArrayIndex(newArray));
-console.log(reutnArrayIndex([10, 20, 30, 40]));
+// console.log(reutnArrayIndex([10, 20, 30, 40]));
