@@ -34,15 +34,28 @@ let temperature = 51
 //     console.log("Most Wanted Criminal");
 // }
 
-let username = "vivek"
-let userVerfied = true
-let paymentStatus = true
-let eligibilityCheck = false
+// let username = "vivek"
+// let userVerfied = true
+// let paymentStatus = true
+// let eligibilityCheck = false
 
-// && (AND) dono side ki value or condition true hona chahiye
-if (userVerfied && paymentStatus && eligibilityCheck){
-    console.log(`${username} can access course`);
-} else {
-    console.log(`${username} cannot access this course`);
+// // && (AND) dono side ki value or condition true hona chahiye
+// if (userVerfied && paymentStatus && eligibilityCheck){
+//     console.log(`${username} can access course`);
+// } else {
+//     console.log(`${username} cannot access this course`);
+    
+// }
+
+// || OR sign or Pipe sign
+// dono me se koi ek condition true honi chahiye
+let loggedInFromEmail = false
+let loggedInFromFacebook = false
+let guestUser = true
+
+if(loggedInFromEmail || loggedInFromFacebook){
+    console.log("user logged in");
+} else if(guestUser){
+    console.log("Welcome, Guest! Create your ReferBuddy account to enjoy full features.");
     
 }
