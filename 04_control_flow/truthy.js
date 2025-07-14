@@ -45,4 +45,4 @@ val1 = null ?? 10 ?? 20
 // Condition ? true : false
 
 const laptopPrice = 80000;
-laptopPrice <= 80000 ? console.log("high lvel laptop") : console.log("mid level laptop");
+laptopPrice <= 80000 ? console.log("mid level laptop") : console.log("high level laptop");
