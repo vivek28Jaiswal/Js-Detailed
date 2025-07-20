@@ -78,9 +78,9 @@ for(let i = 1; i <= 20; i++) {
 //ek bar mistake ko ignore kiya jata hai, matlab ek bari condition ko skip kiya jata hai wo print nhi hota and break nhi krta chalte jata hai condition
 for(let i = 1; i <= 20; i++) {
     if( i == 5){
-        console.log(`favourite number detected`);
+        // console.log(`favourite number detected`);
         continue;
     }
-    console.log(`value of i is ${i}`);
+    // console.log(`value of i is ${i}`);
     
 }
