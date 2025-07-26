@@ -5,5 +5,12 @@ let storingNums = [];
 nums.forEach( (item)=>{
     storingNums.push(item + 10);
 })
+// console.log(storingNums);
 
-console.log(storingNums);
+// chaining
+
+let newNums = nums
+          .map( (num) => num * 10)
+          .map( (num) => num + 1)
+          .filter( (num)=> num >= 130)
+console.log(newNums);
