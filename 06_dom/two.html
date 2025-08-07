@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body style="background-color: rgb(20, 20, 20); color: white"></body>
+  <script>
+    let createDiv = document.createElement('div');
+    console.log(createDiv);
+    createDiv.className = 'mainContainer'
+    // createDiv.append('hey i am append method')
+    createDiv.id = Math.round(Math.random() * 10 + 1);
+    createDiv.setAttribute('title', 'set titled')
+    createDiv.style.backgroundColor = 'white';
+    createDiv.style.color = 'black';
+    createDiv.style.padding = '12px';
+    // createDiv.innerHTML = 'hey are you alive?'
+    // createDiv.append('hey are you alive?');
+    let addText = document.createTextNode('text created') //both are good 
+    createDiv.appendChild(addText)
+    document.body.appendChild(createDiv)
+    
+  </script>
+</html>
