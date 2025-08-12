@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>element edit and delete</title>
+</head>
+<body style="background-color: #333; color: white; font-size: 1.4em;">
+    <ul class="language">
+        <li>JavaScript</li>
+        <li>TypeScript</li>
+        <li>C++</li>
+    </ul>
+</body>
+<script>
+    function addLanguage(langName){
+        let li = document.createElement("li");
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)   
+    }
+    addLanguage('Ruby')
+
+    //Edit
+    let secondChild = document.querySelector('li:nth-child(2)')
+    // console.log(secondChild);
+    // secondChild.innerHTML = 'Golang',
+    // secondChild.style.color = 'orange'
+    let newLi = document.createElement('li')
+    newLi.textContent = 'python'
+    secondChild.replaceWith(newLi)
+
+    //Edit
+    let firstChild = document.querySelector('li:nth-child(1)')
+    firstChild.outerHTML = '<li> ThreeJS </li>'
+    
+    //Remove
+    let lastChild = document.querySelector('li:last-child')
+    lastChild.remove() //ruby has been removed
+</script>
+</html>
