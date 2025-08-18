@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: sans-serif;
+    height: 100%;
+    background-color: #fafafa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parentContainer {
+    height: 60vh;
+    width: 60vh;
+    background-color: #fafafa;
+    border: solid 4px;
+}
+.gameTitle{
+    /* background-color: red; */
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1vw;
+}
+.playGuide{
+    /* background-color: red; */
+    height: 10vh;
+    padding: 0vw 2vw;
+    /* text-align: center; */
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2vw;
+}
+.playGuide ul {
+    color: darkred;
+    padding: .4vw 1.2vw;
+}
+form{
+    height: 20vh;
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.guessNumber{
+    margin-bottom: 1vw;
+}
+.userInput{
+    padding: .4vw 1.7vw;
+}
+.subButton{
+    background: #000;
+    color: white;
+    padding: .4vw 4.6vw;
+    margin-top: 1vw;
+    font-size: 1vw;
+}
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    padding: 0vw 2vw;
+    margin-top: 2vw;
+
+}

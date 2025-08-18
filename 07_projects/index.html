@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number-Guessing</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="parentContainer">
+      <div class="gameTitle">
+        <h2>Guessing Game</h2>
+      </div>
+      <div class="playGuide">
+        <h4>
+          Try to guess the secret number chosen randomly between 1 and 100. You
+          will have 10 attempts to find the correct number.
+        </h4>
+        <ul>
+            <li>After each guess, you will be told whether your guess is too high or too low.</li>
+            <li>Use the hints to adjust your next guess.</li>
+            <li>If you guess the number correctly within 10 tries, you win 🎉</li>
+            <li>If you run out of attempts, the game ends and the secret number is revealed.</li>
+        </ul>
+      </div>
+      <form class="form">
+        <h1 class="guessNumber">Guess a Number</h1>
+        <input class="userInput" type="input" />
+        <input class="subButton" type="submit" />
+      </form>
+      <div class="bottom">
+        <div class="prevGuess">
+            <p>Previous Guess: <span>42</span></p>
+        </div>
+        <div class="guessRemaining">
+            <p>Guess Remaining is: 10</p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="guessTheNum.js"></script>
+</html>
