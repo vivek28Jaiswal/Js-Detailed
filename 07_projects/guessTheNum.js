@@ -3,10 +3,11 @@ let userInput = document.querySelector('.userInput');
 let subButton = document.querySelector('.subButton');
 let prevGuess = document.querySelector('.prevGuess');
 let pendingGuess = document.querySelector('.pendingGuess')
+let msgDisplayed = document.querySelector('.msgDisplayed');
 
 let guessHistory  = [];
-let guessRemaining = 0;
-let ISgame = true //user game khel skta hai
+let guessRemaining = 10;
+let ISgame = true //user can play
 if (ISgame){
     subButton.addEventListener('click', function(e){
         e.preventDefault();
@@ -17,21 +18,16 @@ if (ISgame){
 
 function isValidNumber(guessedValue){
     if(isNaN(guessedValue)){
-        alert('Please enter a valid number.');
+        alert('Please enter a valid number between 1 to 100.');
     } else if (guessedValue > 100){
         alert('Please enter a number less than 100.');
     } else if (guessedValue < 1){
         alert('Please enter a number less than 100.');
     } else {
         guessHistory.push(guessedValue);
-        if(guessRemaining === 11){
-            displayMessage(`Game is Over. Random number was ${randomNumber}`);
-            endGame();
-        } else{
-            displayGuess(guessedValue);
-            checkGuess(guessedValue)
+        checkGuess(guessedValue)
+        displayGuess(guessedValue);
         }
-    }
 }
 
 function checkGuess(guessedValue){
@@ -47,12 +43,19 @@ function checkGuess(guessedValue){
 function displayGuess(guessedValue){
     userInput.value = '';
     prevGuess.innerHTML += `${guessedValue}, `;
-    guessRemaining++ ;
-    pendingGuess.innerHTML = `${10 - guessRemaining}`
+    guessRemaining-- ;
+    pendingGuess.innerHTML = `${guessRemaining}`
+    if(guessRemaining === 0){
+        ISgame = false;
+        displayMessage(`No chances left! The number was ${randomNumber}`)
+        endGame()
+    }
 }
-function displayMessage(){
-    //
+function displayMessage(msg){
+    msgDisplayed.innerHTML = `${msg}`
 }
 function endGame(){
-    //
+    userInput.disabled = true;
+    subButton.disabled = true;
+    ISgame = false;
 }
