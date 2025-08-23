@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    position: relative;
+    font-family: sans-serif;
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.square{
+    height: 40px;
+    width: 40px;
+    background-color: #fafafa;
+}

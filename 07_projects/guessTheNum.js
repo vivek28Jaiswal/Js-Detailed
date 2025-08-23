@@ -59,3 +59,4 @@ function endGame(){
     subButton.disabled = true;
     ISgame = false;
 }
+
