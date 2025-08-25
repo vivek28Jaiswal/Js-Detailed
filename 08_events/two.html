@@ -1,0 +1,30 @@
+<!-- set setTimeout basically jitna time humne set kiya (millisecond) me, wo utne time baad execute ho jata hai -->
+<!-- set interval me jitna time dete hai utne der baad wo chize execute krta hai means log name kiya to har 2sec baad wo name print krega -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur code</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const sayVivek = function(){
+        console.log('vivek is the best')
+    }
+    const changeText = function(){
+        document.querySelector('h1').innerHTML = 'Goat JS series' 
+    }
+    // changeText();
+    const clearME = setTimeout(changeText,2000)
+
+    document.querySelector('#stop').addEventListener('click',function(){
+        clearTimeout(clearME); //stop kr dega setTimeout ko means ab wo aahe ka process nhi krega setTimeout
+        console.log('STOPED')
+    })
+</script>
+</html>
