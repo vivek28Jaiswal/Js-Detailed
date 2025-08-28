@@ -16,10 +16,11 @@
         console.log(str, Date.now());
     }
 
-    let intervalId;
+    let intervalId; //empty variable
     
     document.querySelector('#start').addEventListener('click',function(){
         intervalId = setInterval(sayDate, 1000, "hi")
+        intervalId = null;
     })
     document.querySelector('#stop').addEventListener('click',function(){
         clearInterval(intervalId)
