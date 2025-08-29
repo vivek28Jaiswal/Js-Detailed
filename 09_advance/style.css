@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: #2A2A2A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    width: 16vw;
+    background-color: #f1f1f1
+}
+
+.img-container{
+    height: 16vw;
+    /* width: 100%; */
+    /* background-color: red; */
+}
+
+.text-container{
+    height: 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f1f1f1;
+    background-color: maroon;
+}
