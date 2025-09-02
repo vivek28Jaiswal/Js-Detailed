@@ -25,6 +25,13 @@ html, body{
     /* background-color: red; */
 }
 
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
 .text-container{
     height: 4vw;
     display: flex;
@@ -32,4 +39,14 @@ html, body{
     justify-content: center;
     color: #f1f1f1;
     background-color: maroon;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1vw 0vw;
+}
+button{
+    padding: 10px 40px;
 }

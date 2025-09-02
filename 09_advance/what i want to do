@@ -1,0 +1,10 @@
+make a btn when user click on the button 'Get data', they get total follower and img on the card
+
+how i can make this?
+select button
+also select total followers and img class
+
+write a login when user click on the get data btn the they get data from api and it show on card...
+i need to extract these two things 
+1: avatar_url
+2: follower
