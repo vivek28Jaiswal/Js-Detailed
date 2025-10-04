@@ -21,7 +21,7 @@ let btn = document.querySelector('button');
 
 btn.addEventListener('click', function () {
   //!== {not equal to undefined} If profile exists AND followersCount is not undefined, then run the code to update the image and followers
-  if ( profile && followersCount !== undefined) {
+  if (profile && followersCount !== undefined) {
     img.src = profile;
     followers.innerHTML = followersCount;
   // warna is wale ko 
